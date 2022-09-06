@@ -1,0 +1,61 @@
+<InfoScreen>:
+
+    FloatLayout:
+        Label:
+            text: "Information Screen"
+            pos_hint: {'center_x': 0.5, 'y': 923/1024}
+            size_hint: 1, 23/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        Image:
+            pos_hint: {'center_x': 0.5, 'y': 584/1024}
+            source: './assets/info-rectangle.png'
+            size_hint: 688/768, 268/1024
+
+        Label:
+            id: score_info
+            text: '0'
+            pos_hint: {'center_x': 0.5, 'y': 705/1024}
+            size_hint: 1, 76/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        Label:
+            text: 'Score'
+            pos_hint: {'center_x': 0.5, 'y': 635/1024}
+            size_hint: 1, 16/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        InfoBox:
+            id: peek_info
+            heading: "You've peeked..."
+            unit: "times"
+            pos_hint: {'center_x': 0.2, 'y': 263/1024}
+
+        InfoBox:
+            id: correct_info
+            heading: "You've submitted..."
+            unit: "correct steps"
+            pos_hint: {'center_x': 0.5, 'y': 263/1024}
+
+        InfoBox:
+            id: time_info
+            heading: "Average time per question..."
+            unit: "seconds"
+            pos_hint: {'center_x': 0.8, 'y': 263/1024}
+
+        RoundedButton:
+            short: False
+            pos_hint: {'center_x': 0.5,'y': 99/1024}
+            size_hint: 582/768, 51/1024
+            text: "Next Question"
+            on_release: 
+                root.manager.current = 'ccc_screen'

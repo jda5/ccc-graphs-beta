@@ -1,0 +1,48 @@
+#: import web webbrowser
+
+<CompletionScreen>:
+
+    FloatLayout:
+        Label:
+            text: "Well done on finishing the task!"
+            pos_hint: {'center_x': 0.5, 'top': 923/1024}
+            size_hint: 1, 31/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        Label:
+            id: score
+            text: '0'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: 1, 90/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        Label:
+            text: "Score"
+            pos_hint: {'center_x': 0.5, 'y': 429/1024}
+            size_hint: 1, 18/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        Label:
+            text: "Please now complete the questionnaire."
+            pos_hint: {'center_x': 0.5, 'y': 182/1024}
+            size_hint: 1, 20/1024
+            font_size: self.height
+            bold: True
+            color: 0, 0, 0, 1
+            font_name: 'poppins'
+
+        RoundedButton:
+            short: False
+            pos_hint: {'center_x': 0.5,'y': 99/1024}
+            size_hint: 582/768, 51/1024
+            text: "Click to access the questionnaire"
+            on_release: web.open('https://lboro.onlinesurveys.ac.uk/ccc-writer')
