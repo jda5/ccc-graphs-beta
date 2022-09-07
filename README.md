@@ -10,4 +10,4 @@ Click the appropriate link below to view different versions of the app:
 
 * prototype (pre-alpha):  https://github.com/jda5/ccc-graphs-prototype
 * alpha:                  https://github.com/jda5/ccc-graphs-alpha
-* final:                  LINK
+* production:             https://github.com/jda5/ccc-graphs-production
